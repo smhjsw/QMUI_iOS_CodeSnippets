@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rac_kvo</string>
+	<string>parw</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[RACObserve(&lt;#object#&gt;, &lt;#property#&gt;) subscribeNext:^(id x) {
-            &lt;##&gt;
-        }];</string>
+	<string>@property (nonatomic, assign, readwrite) &lt;#type#&gt; &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BEBAED0D-8043-4BFA-9ED6-75524C49E23B</string>
+	<string>32E2254E-F2F6-419B-B581-B6885C95A62B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>RAC KVO Observe</string>
+	<string>Property For Assign And Readonly</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
