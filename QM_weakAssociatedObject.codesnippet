@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>weakAssociatedObject</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)setObject:(&lt;#type#&gt;)object
+    {
+        &lt;#type#&gt; __weak weakObject = object;
+        &lt;#type#&gt; (^block)(void) = ^{ return weakObject; };
+        objc_setAssociatedObject(self, @selector(object), block, OBJC_ASSOCIATION_COPY);
+    }
+
+    - (&lt;#type#&gt;)object
+    {
+        &lt;#type#&gt; (^block)(void) = objc_getAssociatedObject(self, @selector(object));
+        return (block ? block() : nil);
+    }
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2C6B159A-D934-44B7-B110-1BF1D4B89707</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Weak Associated Object</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
