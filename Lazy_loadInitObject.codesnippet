@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>closeItem</string>
+	<string>lazyLoad</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIBarButtonItem qmui_closeItemWithTarget:self action:@selector(&lt;#selector name#&gt;)];</string>
+	<string>
+- (&lt;#type#&gt; *)&lt;#name#&gt;
+{
+    if (!_&lt;#name#&gt;) {
+        &lt;#content#&gt;
+    }
+    return _&lt;#name#&gt;;
+}
+    </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F68179BA-29CA-48D0-8F20-54CE21E05920</string>
+	<string>5FACEBF8-1E17-48C8-BDF0-A1873549B922</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Close UIBarButtonItem</string>
+	<string>懒加载初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
